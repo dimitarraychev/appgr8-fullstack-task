@@ -1,11 +1,11 @@
 const notes = [
   {
-    id: "",
-    content: "",
+    id: "1",
+    content: "first note",
   },
   {
-    id: "",
-    content: "",
+    id: "2",
+    content: "second note",
   },
 ];
 
