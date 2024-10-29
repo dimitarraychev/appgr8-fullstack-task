@@ -3,6 +3,7 @@ import "./NoteForm.css";
 
 const NoteForm = () => {
   const [inputs, setInputs] = useState({ content: "" });
+  const [error, setError] = useState("");
 
   const changeHandler = (event) => {
     const { name, value } = event.target;
@@ -15,6 +16,12 @@ const NoteForm = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
 
+    if (inputs.content === "") {
+      setError("The content field cannot be empty.");
+      return;
+    }
+
+    setError("");
     createNote();
   };
 
@@ -51,6 +58,8 @@ const NoteForm = () => {
       />
 
       <input type="submit" value="Submit" className="submit-btn" />
+
+      <p className="error-msg">{error}</p>
     </form>
   );
 };
