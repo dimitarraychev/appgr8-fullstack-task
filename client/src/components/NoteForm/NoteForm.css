@@ -1,0 +1,14 @@
+.note-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.note-form .submit-btn {
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  align-self: center;
+  margin-top: 0.5rem;
+}

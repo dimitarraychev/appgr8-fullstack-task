@@ -1,0 +1,11 @@
+.note-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-card button {
+  margin: 0.2rem;
+  padding: 0.1rem 0.3rem;
+}
